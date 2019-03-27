@@ -2,7 +2,7 @@
 class Course
   attr_accessor :title, :schedule, :description
   
-  def self.all 
+  def reset_all 
     @@all 
   end 
 end 

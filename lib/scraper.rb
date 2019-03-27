@@ -24,12 +24,10 @@ def get_page
       course.schedule = post.css(".date").text
       course.description = post.css("p").text
     end
+    binding.pry
  
 end 
 end 
 
 Scraper.new.get_page
 
-doc.css(".post").first.css("h2").text
-  doc.css(".post").first.css(".date").text
-  doc.css(".post").first.css("p").text
